@@ -15,6 +15,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         content: resolve(__dirname, "src/content/content.js"),
+        background: resolve(__dirname, "src/background/background.js"),
       },
       output: {
         entryFileNames: (chunkInfo) => {

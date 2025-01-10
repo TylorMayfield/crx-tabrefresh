@@ -1,8 +1,8 @@
 {
-  "name": "crx-template",
+  "name": "crx-tabrefresh",
   "private": false,
   "version": "1.0.1",
-  "description": "Chrome Extension Template with Mantine UI",
+  "description": "Chrome Extension to refresh specific tabs",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -13,7 +13,9 @@
   "keywords": [
     "chrome-extension",
     "mantine",
-    "template"
+    "template",
+    "react",
+    "vite"
   ],
   "author": "",
   "license": "ISC",

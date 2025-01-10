@@ -1,72 +1,29 @@
-# Chrome Extension Template with Mantine UI
+# Tab Refresh
 
-A minimal Chrome extension template built with React and Mantine UI. This template provides a clean starting point for building Chrome extensions with a modern UI framework.
+A Chrome extension that keeps your web sessions active by preventing automatic refreshes on sites that require user interaction. Stay focused and engaged without interruptions while managing your timers effortlessly.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/tylormayfield)
 
 ## Features
 
-- **React 18**: Built with the latest version of React
-- **Mantine UI**: Beautiful and customizable UI components
-- **Modern Build System**: Uses Vite for fast development and builds
-- **TypeScript Support**: Includes TypeScript configurations
-- **Notification System**: Demonstrates Mantine's notification system
-- **Tabler Icons**: Integrated with Mantine UI
+- 🕒 Set custom refresh intervals for any tab
+- 📊 Manage multiple refresh timers simultaneously
+- ⚡ Lightweight and efficient
+- 🎨 Clean, modern UI built with React and Tailwind CSS
+- ⚙️ Customizable options page
+- 🚫 Prevents automatic refresh of the active tab to maintain user engagement and focus.
 
-## Getting Started
+## Installation
 
-1. Clone this repository
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
-3. Build the extension:
-   ```bash
-   npm run build
-   ```
-4. Load the extension:
-   - Open Chrome and go to `chrome://extensions/`
-   - Enable "Developer mode"
-   - Click "Load unpacked" and select the `dist` directory
+1. Clone the repository: `git clone https://github.com/tylormayfield/crx-tabrefresh.git`
+2. Navigate to the repository directory: `cd crx-tabrefresh`
+3. Install dependencies: `npm install`
 
-## Project Structure
+## Usage
 
-```
-├── src/
-│   ├── App.jsx          # Main application component
-│   ├── main.jsx         # Application entry point
-│   └── App.css          # Global styles
-├── src/components/     # Component directory
-└── index.html           # HTML template
-├── manifest.json        # Extension manifest
-├── vite.config.js       # Vite configuration
-└── manifest.json        # Extension manifest
-└── icon.png             # Extension icon
-└── PRIVACY.md           # Privacy policy
-└── README.md            # Project README
-└── package.json         # Project configuration
-└── package-lock.json    # Project lock file
-
-
-```
-
-## Links
-
-- [GitHub Repository](https://github.com/TylorMayfield/crx-template)
-- [Chrome Web Store](https://chromewebstore.google.com/detail/chrome-extension-template/mechhnlbchididihbgadhfokjnbhfbed)
-
-## Customization
-
-The template uses Mantine UI's theme system. You can customize the theme in `App.jsx`:
-
-```javascript
-<MantineProvider
-  theme={{
-    colorScheme: preferredColorScheme,
-    // Add your theme customizations here
-  }}
->
-```
-
-## Links
-
-- [GitHub Repository](https://github.com/TylorMayfield/crx-template)
-- [Chrome Web Store](https://chromewebstore.google.com/detail/chrome-extension-template/mechhnlbchididihbgadhfokjnbhfbed)
+1. Install the dependencies: `npm run install`
+2. Build the extension: `npm run build`
+3. Open Chrome and navigate to `chrome://extensions/`
+4. Enable "Developer mode" in the top-right corner
+5. Click "Load unpacked" and select the `dist` directory
+6. Click "Enable" to activate the extension
