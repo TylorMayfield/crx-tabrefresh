@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Tab Refresh",
-  "version": "1.0",
-  "description": "A Chrome extension that keeps your web sessions active by preventing automatic refreshes on sites that require user interaction.",
+  "version": "1.1",
+  "description": "Keep your web sessions active by refreshing tabs that require user interaction.",
   "permissions": ["tabs", "activeTab", "storage"],
   "background": {
     "service_worker": "/src/background/background.js",
