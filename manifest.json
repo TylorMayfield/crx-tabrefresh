@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Tab Refresh",
   "version": "1.2",
-  "description": "Keep your web sessions active by refreshing tabs that require user interaction.",
+  "description": "Automatically refresh browser tabs at customizable intervals to keep web sessions active. Features tab-specific timers, pause/resume functionality, and active tab skipping.",
   "permissions": ["tabs", "activeTab", "storage"],
   "background": {
     "service_worker": "/src/background/background.js",
