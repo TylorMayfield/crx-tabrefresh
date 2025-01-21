@@ -1,9 +1,13 @@
 {
   "manifest_version": 3,
   "name": "Tab Refresh",
-  "version": "1.4",
+  "version": "1.0.2",
   "description": "Automatically refresh browser tabs at customizable intervals to keep web sessions active. ",
-  "permissions": ["tabs", "activeTab", "storage"],
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage"
+  ],
   "background": {
     "service_worker": "/src/background/background.js",
     "type": "module"
