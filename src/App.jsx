@@ -28,6 +28,7 @@ import {
   IconClock,
   IconMoon2,
   IconSun,
+  IconBrandPatreon,
 } from "@tabler/icons-react";
 import "./App.css";
 
@@ -158,11 +159,11 @@ function App() {
       <Table.Td>
         <Group spacing="xs">
           <Badge variant="light">
-            {timer.inFocus 
-              ? "In Focus" 
-              : timer.paused 
-                ? "Paused" 
-                : Math.floor(timer.timeLeft / 1000) + "s"}
+            {timer.inFocus
+              ? "In Focus"
+              : timer.paused
+              ? "Paused"
+              : Math.floor(timer.timeLeft / 1000) + "s"}
           </Badge>
         </Group>
       </Table.Td>
@@ -180,9 +181,9 @@ function App() {
               <IconPlayerPause size={16} />
             )}
           </ActionIcon>
-          <ActionIcon 
-            onClick={() => stopTimer(timer.tabId)} 
-            variant="subtle" 
+          <ActionIcon
+            onClick={() => stopTimer(timer.tabId)}
+            variant="subtle"
             color="red"
           >
             <IconPlayerStop size={16} />
@@ -369,10 +370,33 @@ function App() {
             </Stack>
           </Paper>
         </Container>
-        <footer style={{ textAlign: 'center', padding: '20px', marginTop: 'auto' }}>
-          <a href="https://ko-fi.com/tylormayfield" target="_blank" rel="noopener noreferrer">
-            <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Buy Me a Coffee" />
-          </a>
+        <footer className="footer-text">
+          <Group align="center" justify="center" style={{ width: "100%" }}>
+            <a
+              href="https://www.patreon.com/TylorMayfield"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ textDecoration: "none" }}
+            >
+              <Group align="center">
+                <IconBrandPatreon
+                  style={{ display: "flex", alignItems: "center" }}
+                />
+                <Text
+                  size="sm"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    cursor: "pointer",
+                  }}
+                >
+                  Support on Patreon
+                </Text>
+              </Group>
+            </a>
+            <Text size="sm">|</Text>
+            <Text size="sm">{new Date().getFullYear()} Tylor Mayfield</Text>
+          </Group>
         </footer>
       </AppShell>
     </MantineProvider>
